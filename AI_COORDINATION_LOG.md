@@ -495,13 +495,13 @@ Una tarea está terminada cuando:
 - **Fecha:** 2026-07-21 21:19 America/Mexico_City
 - **Fase activa:** Fase 0 — Gobierno y memoria compartida
 - **Estado:** repositorio local inicializado y enlazado con GitHub; documentación inicial preparada para commit
-- **Último commit estable:** pendiente
+- **Último commit estable local:** `48dab4f62a09b3f7284edce3ec11d7a96674e8b4`
 - **Rama estable:** `main`, rastrea `origin/main`
 - **Repositorio remoto canónico:** `https://github.com/Yayometro/jobsniped.git`
 - **Directorio local canónico:** `/Users/luisjairvazqueznavarrete/Coding Proyects/JobSniper`
 - **Tareas en progreso:** ninguna
-- **Bloqueos:** ninguno
-- **Siguiente puerta:** publicar el commit de integración y comenzar JOB-002
+- **Bloqueos:** falta autenticar GitHub en este equipo para publicar los commits locales
+- **Siguiente puerta:** autenticar GitHub, ejecutar `git push origin main` y comenzar JOB-002
 - **Arquitectura vigente:** React + Vite, Bun local service, SQLite, Ollama, Telegram
 - **Servidor:** documentado; no implementar
 - **LinkedIn:** manual y alertas nativas; no scraping
@@ -732,19 +732,19 @@ Copiar esta sección al final, completarla y no modificar entradas anteriores.
 - **Comandos ejecutados:** `git ls-remote --symref`, `git init -b main`, `git fetch origin main`, `git checkout -B main --track origin/main`, `git remote -v`, `git status`
 - **Tests:** no aplican; todavía no existe código de producto
 - **Resultado:** el working tree local conserva los documentos existentes y `main` rastrea `origin/main`
-- **Errores conocidos:** ninguno
+- **Errores conocidos:** `git push origin main` no pudo leer credenciales HTTPS; GitHub CLI no está instalado y no hay llave SSH disponible
 - **Riesgos:** la URL conserva el nombre remoto existente `jobsniped`, aunque el producto se llama JobSniper
 
 ### Estado de Git
 
-- **Commit(s):** se registrará el commit de integración al cerrar esta sesión
-- **Working tree limpio:** pendiente del commit de integración
+- **Commit(s):** `48dab4f62a09b3f7284edce3ec11d7a96674e8b4` — `docs: establish canonical JobSniper repository`
+- **Working tree limpio:** sí al crear el commit de integración; esta actualización final de la bitácora requiere un commit adicional
 - **Listo para merge:** trabajo realizado directamente sobre `main` por instrucción explícita de Jair durante la inicialización
 
 ### Handoff
 
-- **Falta:** confirmar el commit publicado y comenzar JOB-002
+- **Falta:** autenticar GitHub y publicar los commits locales; después comenzar JOB-002
 - **Próxima tarea recomendada:** JOB-002 — Crear fuente de verdad personal
 - **Instrucciones para el siguiente agente:** trabajar únicamente desde la ruta canónica, leer ambos documentos y verificar `origin/main` antes de editar
-- **Bloqueos:** ninguno
+- **Bloqueos:** credenciales de GitHub no disponibles en el entorno actual
 - **Propuestas de cambio al plan:** ninguna
