@@ -1,0 +1,31 @@
+# Dependencies and builds
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local/private JobSniper data
+data/private/
+data/*.sqlite
+data/*.sqlite-*
+data/*.db
+resumes/
+logs/
+backups/
+
+# Local AI client configuration
+.claude/
+
+# Editors and operating system
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
